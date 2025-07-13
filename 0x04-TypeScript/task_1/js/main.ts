@@ -17,6 +17,8 @@ const teacher3: Teacher = {
 
 console.log(teacher3);
 
+// Step 2: Directors interface
+
 interface Directors extends Teacher {
   numberOfReports: number;
 }
@@ -31,6 +33,9 @@ const director1: Directors = {
 
 console.log(director1);
 
+
+// Step 3: printTeacher function and its interface
+
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
@@ -41,6 +46,7 @@ const printTeacher: printTeacherFunction = (firstName, lastName) => {
 
 console.log(printTeacher("John", "Doe")); // Output: J. Doe
 
+// Step 4: StudentClass, StudentInterface, StudentConstructor
 interface StudentConstructor {
   new(firstName: string, lastName: string): StudentInterface;
 }
@@ -61,7 +67,7 @@ class StudentClass implements StudentInterface {
     return this.firstName;
   }
 }
-
+// Sample usage
 const student = new StudentClass("Alex", "Smith");
 console.log(student.displayName());     // Alex
 console.log(student.workOnHomework());  // Currently working
