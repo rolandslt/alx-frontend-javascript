@@ -75,3 +75,6 @@ cd 0x04-TypeScript/task_2/
 
 # Run Webpack to build the code
 npm run build
+
+🧑‍💻 Author
+Rolandslt , roland lulando 
